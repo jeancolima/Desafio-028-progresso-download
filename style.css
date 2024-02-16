@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #3f37c9;
+    --secondary-color: #60d394;
+    --third-color: #ee6055;
+    --background-color: #ffcdb2;
+    --white: #FFF;
+    --black: #000;
+    --gray: #5e5d5d;
+    --light-gray: #afafaf;
+    /* Fonts */
+    --primary-font: "Poppins", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    font-family: var(--primary-font);
+    color: var(--black);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100dvh - 8rem);
+    padding: 4rem 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 400px;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 24px;
+}
+
+.download-progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-archive-name {
+    font-weight: 600;
+}
+
+.download-progress-percentage {
+    display: flex;
+    gap: 7px;
+}
+
+.download-progress-percentage p {
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.download-progress-percentage img {
+    width: 15px;
+    cursor: pointer;
+}
+
+.download-progressbar-container {
+    width: 100%;
+    height: 7px;
+    border-radius: 8px;
+    background-color: var(--light-gray);
+}
+
+.download-progressbar {
+    width: 40%;
+    height: 7px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+}
+
+.download-complete-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-complete-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-complete-percentage {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.download-complete-percentage p {
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.download-complete-percentage img {
+    width: 20px;
+}
+
+.download-progressbar-complete-container {
+    width: 100%;
+    height: 7px;
+    border-radius: 8px;
+    background-color: var(--light-gray);
+}
+
+.download-complete-progressbar {
+    width: 100%;
+    height: 7px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.download-failed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-progressbar-failed-container {
+    width: 100%;
+    height: 7px;
+    border-radius: 8px;
+    background-color: var(--light-gray);
+}
+
+.download-failed-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-failed-percentage {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.download-failed-percentage p {
+    color: var(--third-color);
+    font-weight: 600;
+}
+
+.download-failed-percentage img {
+    width: 25px;
+}
+
+.download-failed-progressbar {
+    width: 100%;
+    height: 7px;
+    border-radius: 8px;
+    background-color: var(--third-color);
+}
